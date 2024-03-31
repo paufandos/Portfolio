@@ -40,6 +40,22 @@
 
   &--space-between {
     justify-content: space-between;
+
+    @media (min-width: 768px) {
+      &-md {
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &--space-around {
+    justify-content: space-around;
+
+    @media (min-width: 768px) {
+      &-md {
+        justify-content: space-around;
+      }
+    }
   }
 
   &--vertical-centered {
@@ -49,10 +65,18 @@
   &--centered {
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 768px) {
+      &-sm {
+        justify-content: center;
+        align-items: center;
+      }
+    }
   }
 
   @for $gap-position from 1 through length($gap-list) {
     $gap-order: $gap-position - 1;
+
     &--gap-#{$gap-order} {
       gap: nth($gap-list, $gap-position);
     }

@@ -38,6 +38,17 @@
     background-color: var(--primary-color-800);
   }
 
+  &--big {
+    @media (max-width: 768px) {
+      border-radius: var(--border-radius-full);
+      padding: var(--padding-5);
+
+      i {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
   &--hover-animation {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
