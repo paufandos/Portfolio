@@ -4,13 +4,13 @@
   &--wrap {
     flex-wrap: wrap;
 
-    @media (min-width: 768px) {
+    @media (width > 768px) {
       &-md {
         flex-wrap: wrap;
       }
     }
 
-    @media (min-width: 992px) {
+    @media (width > 992px) {
       &-lg {
         flex-wrap: wrap;
       }
@@ -20,13 +20,13 @@
   &--nowrap {
     flex-wrap: nowrap;
 
-    @media (min-width: 768px) {
+    @media (width > 768px) {
       &-md {
         flex-wrap: nowrap;
       }
     }
 
-    @media (min-width: 992px) {
+    @media (width > 992px) {
       &-lg {
         flex-wrap: nowrap;
       }
@@ -41,7 +41,7 @@
   &--space-between {
     justify-content: space-between;
 
-    @media (min-width: 768px) {
+    @media (width > 768px) {
       &-md {
         justify-content: space-between;
       }
@@ -51,7 +51,7 @@
   &--space-around {
     justify-content: space-around;
 
-    @media (min-width: 768px) {
+    @media (width > 768px) {
       &-md {
         justify-content: space-around;
       }
@@ -81,13 +81,13 @@
       gap: nth($gap-list, $gap-position);
     }
 
-    @media (min-width: 768px) {
+    @media (width > 768px) {
       &--gap-md-#{$gap-order} {
         gap: nth($gap-list, $gap-position);
       }
     }
 
-    @media (min-width: 992px) {
+    @media (width > 992px) {
       &--gap-lg-#{$gap-order} {
         gap: nth($gap-list, $gap-position);
       }

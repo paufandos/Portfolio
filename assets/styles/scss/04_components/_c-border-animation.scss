@@ -1,22 +1,22 @@
 .c-border-animation {
   &__container {
-    padding: 1px;
-    border-radius: 48px;
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
+
+    padding: 1px;
+    border-radius: var(--border-radius-6);
   }
 
   &__effect {
-    background-image: conic-gradient(
-      from 90deg at 50% 50%,
-      #ff7f7f,
-      #970000,
-      #ff7f7f
-    );
-    animation: spin 2s linear infinite;
-    inset: -1000%;
     position: absolute;
+    inset: -1000%;
     z-index: -1;
+
+    background-image: conic-gradient(from 90deg at 50% 50%,
+        #ff7f7f,
+        #970000,
+        #ff7f7f);
+    animation: spin 2s linear infinite;
   }
 }
 

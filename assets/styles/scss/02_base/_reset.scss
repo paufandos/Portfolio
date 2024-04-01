@@ -18,8 +18,8 @@ svg {
 }
 
 body {
-  margin: var(--margin-0);
   min-height: var(--height-100-viewport);
+  margin: var(--margin-0);
 }
 
 h1,
@@ -39,8 +39,10 @@ a {
   text-decoration: none;
 }
 
-ol, li {
+ol,
+li {
   margin: var(--margin-0);
   padding: var(--padding-0);
+
   list-style: none;
 }

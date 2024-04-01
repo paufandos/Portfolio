@@ -1,7 +1,10 @@
 :root {
+  --default-font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --default-line-height: 1.75rem;
   --default-font-size: 12px;
   --h1-font-size: 3rem;
+  --h1-font-size-sm: 2.6rem;
   --h2-font-size: 2.5rem;
   --h3-font-size: 2.25rem;
   --h4-font-size: 2rem;
@@ -24,6 +27,7 @@
   --primary-color-with-opcity-2: #08c9bf00;
   --bg-primary-color-without-opcity-1: #012429;
   --bg-primary-color-without-opcity-2: #00161d;
+  --bg-primary-color-dark: #012f33;
 
   --secondary-color-100: #fcc68d;
   --secondary-color-200: #faab61;
