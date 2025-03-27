@@ -1,5 +1,13 @@
 .c-card {
   padding: var(--padding-0);
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (width > 576px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap-6);
+  }
 
   #card_2 {
     margin-bottom: var(--margin-0);
@@ -8,6 +16,7 @@
   &__item {
     position: sticky;
     top: 10dvh;
+    padding: var(--padding-5);
 
     margin-bottom: var(--margin-16);
     border-radius: var(--border-radius-6);
@@ -61,6 +70,7 @@
 
     font-size: 1.75rem;
     line-height: 2.5rem;
+    color: var(--secondary-color-400);
   }
 
   h4 {
